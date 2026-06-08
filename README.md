@@ -35,7 +35,7 @@ proyecto_auditoria/
 
 ### 1. Clonar el repositorio
 ```powershell
-git clone https://github.com/tu-usuario/devops-security-audit.git
+git clone https://github.com/20241d020-hue/devops-security-audit.git
 cd devops-security-audit
 ```
 
