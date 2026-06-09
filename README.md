@@ -1,17 +1,17 @@
-# 🛡️ DevOps – Gestión de Parches y Auditoría de Seguridad
+DevOps – Gestión de Parches y Auditoría de Seguridad
 
 Proyecto Final – Desarrollo de Sistemas de Información | DevOps  
 Docente: Rildo M. Tapia Pacheco
 
 ---
 
-## 📋 Descripción
+ Descripción
 
 Sistema automatizado que audita la seguridad de equipos Windows, detecta parches faltantes,
 recopila eventos críticos del sistema y genera reportes HTML con notificaciones automáticas
 vía Webhook (Slack / Discord).
 
-## 🗂️ Estructura del repositorio
+##  Estructura del repositorio
 
 ```
 proyecto_auditoria/
@@ -24,14 +24,14 @@ proyecto_auditoria/
 └── README.md
 ```
 
-## ⚙️ Requisitos
+##  Requisitos
 
 - Windows 10 / Windows Server 2016 o superior
 - PowerShell 5.1 o superior
 - Acceso a Internet (para Windows Update)
 - Permisos de Administrador (para la tarea programada)
 
-## 🚀 Instalación rápida
+##  Instalación rápida
 
 ### 1. Clonar el repositorio
 ```powershell
@@ -60,7 +60,7 @@ $env:AUDIT_WEBHOOK_URL = "https://hooks.slack.com/services/TU_WEBHOOK"
 .\scripts\Invoke-SecurityAudit.ps1 -AutoInstallModule
 ```
 
-## 🔄 Flujo de ejecución
+##  Flujo de ejecución
 
 ```
 Programador de Tareas (07:00)
@@ -74,7 +74,7 @@ Invoke-SecurityAudit.ps1
          └─► Send-WebhookNotification() → Slack / Discord
 ```
 
-## 📊 Ejemplo de salida
+##  Ejemplo de salida
 
 El script genera un reporte HTML en `output/` con:
 - Resumen ejecutivo (tarjetas con contadores)
@@ -82,7 +82,7 @@ El script genera un reporte HTML en `output/` con:
 - Tabla de eventos críticos/errores de las últimas 24 horas
 - Timestamp y nombre del equipo
 
-## 🧪 Modo simulación
+##  Modo simulación
 
 Si `PSWindowsUpdate` no está instalado y no se pasa `-AutoInstallModule`,
 el script corre en modo simulación con datos de ejemplo para demostración.
@@ -92,7 +92,7 @@ el script corre en modo simulación con datos de ejemplo para demostración.
 .\scripts\Invoke-SecurityAudit.ps1
 ```
 
-## 📁 Historial de commits sugerido
+##  Historial de commits sugerido
 
 ```
 feat: estructura inicial del proyecto
@@ -105,6 +105,6 @@ feat: script de registro de tarea programada
 docs: documentación y README
 ```
 
-## 👥 Autores
+##  Autores
 Josept Enrrique Turpo Yancce
 Proyecto Final DevOps – 2025
