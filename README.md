@@ -106,5 +106,5 @@ docs: documentación y README
 ```
 
 ## 👥 Autores
-
+Josept Enrrique Turpo Yancce
 Proyecto Final DevOps – 2025
